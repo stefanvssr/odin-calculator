@@ -14,7 +14,17 @@ function calcDivide(num1, num2) {
     return num1 / num2;
 }
 
-console.log(calcAdd(30, 123));
-console.log(calcSubtract(150, 22));
-console.log(calcMultiply(10, 11));
-console.log(calcDivide(10, 5));
+function operate(operator, num1, num2) {
+    if (operator === "add") {
+        return calcAdd(num1, num2);
+    } else if (operator === "subtract") {
+        return calcSubtract(num1, num2);
+    } else if (operator === "multiply") {
+        return calcMultiply(num1, num2);
+    } else if (operator === "divide") {
+        return calcDivide(num1, num2);
+    }
+
+}
+
+console.log(operate("multiply", 40, 56));
