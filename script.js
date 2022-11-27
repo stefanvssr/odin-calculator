@@ -27,4 +27,4 @@ function operate(operator, num1, num2) {
 
 }
 
-console.log(operate("multiply", 40, 56));
+console.log(operate("add", 40, 56));
