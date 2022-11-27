@@ -1,3 +1,15 @@
+const digitButtons = document.querySelectorAll(".digits");
+const screen = document.querySelector(".screen");
+let screenValue = "";
+
+digitButtons.forEach(button => {
+    button.addEventListener("click", (e) => {
+        screenValue += e.target.value;
+
+        screen.innerHTML = screenValue;
+    });
+});
+
 function calcAdd(num1, num2) {
     return num1 + num2;
 }
@@ -26,5 +38,3 @@ function operate(operator, num1, num2) {
     }
 
 }
-
-console.log(operate("add", 40, 56));
